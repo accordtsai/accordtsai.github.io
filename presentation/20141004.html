@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Mu-Hung Tsai" />
+  <title>Paving the way to Clinical Informatics</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="reveal.js/css/reveal.min.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+    <link rel="stylesheet" href="reveal.js/css/theme/beige.css" id="theme">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+    <!--[if lt IE 9]>
+    <script src="reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Paving the way to Clinical Informatics</h1>
+    <h2 class="author">Mu-Hung Tsai</h2>
+    <h3 class="date">2014/10/04</h3>
+</section>
+
+<section id="big-data" class="slide level2">
+<h2>Big Data</h2>
+<ul>
+<li>Use existing data to better support decision making</li>
+</ul>
+</section>
+<section id="garbage-in-garbage-out" class="slide level2">
+<h2>Garbage in Garbage out</h2>
+<ul>
+<li>Everything is garbage until proven otherwise</li>
+</ul>
+</section>
+<section id="potential-solutions" class="slide level2">
+<h2>Potential Solutions</h2>
+<ul>
+<li>Natural language processing (NLP)</li>
+<li>Semantic web</li>
+</ul>
+</section>
+<section id="propose-alternative-solution" class="slide level2">
+<h2>Propose Alternative Solution</h2>
+<ul>
+<li><strong>Involve</strong> the <strong>GOLD STANDARD</strong></li>
+<li>Put MDs in the driving seat</li>
+<li>By doctors, for doctors</li>
+</ul>
+</section>
+<section id="retrospective-chart-review" class="slide level2">
+<h2>Retrospective Chart Review</h2>
+<ul>
+<li>Lower evidence level than Randomized Controlled Trials (RCT)</li>
+<li>Much much cheaper and easier</li>
+<li>Very important part of clinical medical research</li>
+</ul>
+</section>
+<section id="retrospective-chart-review-1" class="slide level2">
+<h2>Retrospective Chart Review</h2>
+<ul>
+<li>Report outcome data &quot;as-is&quot;</li>
+<li>Compare treatment response</li>
+<li>Identify possible prognostic factors</li>
+</ul>
+</section>
+<section id="selecting-patients-easy" class="slide level2">
+<h2>Selecting Patients (Easy)</h2>
+<ul>
+<li>Certain diagnosis</li>
+<li>Treated at certain department</li>
+</ul>
+</section>
+<section id="selecting-patients-hard" class="slide level2">
+<h2>Selecting Patients (Hard)</h2>
+<ul>
+<li>Patients with certain diagnosis AND underlying/history</li>
+<li>Patients with good/poor response to treatment</li>
+<li>&quot;That patient with the strange mass in his lungs&quot;</li>
+</ul>
+</section>
+<section id="tag-based-system" class="slide level2">
+<h2>Tag Based System</h2>
+<ul>
+<li>Still your EMR charts</li>
+<li>Annotate your charts with searchable tags (post-it)</li>
+<li>Minimal change to workflow</li>
+</ul>
+</section>
+<section id="workflow" class="slide level2">
+<h2>Workflow</h2>
+<ul>
+<li>Clinical duties as usual</li>
+<li>Import EHR into system</li>
+<li>&quot;Tag&quot; important concepts or results</li>
+<li>Search</li>
+<li>Automated queries</li>
+</ul>
+</section>
+<section id="clinical-duty" class="slide level2">
+<h2>Clinical Duty</h2>
+<ul>
+<li>Use existing EHR system</li>
+<li>No need to modify anything</li>
+<li>(Optional) Use ##hashtag inside EHR</li>
+</ul>
+</section>
+<section id="import" class="slide level2">
+<h2>Import</h2>
+<ul>
+<li>Institution-specific import filters</li>
+<li>Import EHR, HIS (labs), PACS (image)</li>
+<li>(Future) Appending new records to old records</li>
+</ul>
+</section>
+<section id="tag" class="slide level2">
+<h2>Tag</h2>
+<ul>
+<li>MD tags important concepts or results</li>
+<li>GOLD STANDARD</li>
+<li>Searchable and computable!</li>
+<li>(Future) &quot;meta-tags&quot;</li>
+<li>(Future) Ontology of tags</li>
+<li>(Future) Logical processing of tags</li>
+<li>(Future) Various tools to aid tagging</li>
+<li>(Future) Ownership and collaboration of tags</li>
+</ul>
+</section>
+<section id="search" class="slide level2">
+<h2>Search</h2>
+<ul>
+<li>Find breast cancer patients with underlying of heart disease</li>
+<li>Find prostate cancer patients with distant metastasis</li>
+</ul>
+</section>
+<section id="automated-queries" class="slide level2">
+<h2>Automated Queries</h2>
+<ul>
+<li>What is the survival curve of stage III NPC?</li>
+<li>What is the survival curve of stage III NPC with N2?</li>
+<li>What is the survival curve of stage III NPC with N2 and EBV DNA(-)?</li>
+<li>What is the survival curve of stage III NPC with N2 and EBV DNA(-) treated with RT alone?</li>
+</ul>
+</section>
+<section id="automated-queries-1" class="slide level2">
+<h2>Automated Queries</h2>
+<ul>
+<li>Questions important to physicians</li>
+<li>Time-consuming traditionally</li>
+<li>But not computationally difficult!</li>
+</ul>
+</section>
+<section id="automated-queries-2" class="slide level2">
+<h2>Automated Queries</h2>
+<ul>
+<li>Customizable queries by the physician</li>
+<li>Command-line (SQL-like?) interface first</li>
+<li>(Future) User-friendly interface for constructing queries</li>
+</ul>
+</section>
+<section id="future-prospects" class="slide level2">
+<h2>Future Prospects</h2>
+<ul>
+<li>Using novel factors to predict prognosis</li>
+<li>Biomarkers</li>
+<li>Gene arrays</li>
+</ul>
+</section>
+<section id="future-prospects-1" class="slide level2">
+<h2>Future Prospects</h2>
+<ul>
+<li>Using novel strategies to predict prognosis</li>
+<li>LIBSVM</li>
+<li>Random Forest</li>
+</ul>
+</section>
+<section id="future-prospects-2" class="slide level2">
+<h2>Future Prospects</h2>
+<ul>
+<li>Large corpus of medical text and GOLD STANDARD tags</li>
+<li>NLP development</li>
+<li>Develop automatic tag suggestion systems</li>
+</ul>
+</section>
+<section id="future-prospects-3" class="slide level2">
+<h2>Future Prospects</h2>
+<ul>
+<li>Deploy Bayesian statistics in clinical environment</li>
+<li>Previously not used because...too much math involved</li>
+</ul>
+</section>
+<section id="vision" class="slide level2">
+<h2>Vision</h2>
+<blockquote>
+<p>Physicians believe that insufficient time is the greatest barrier to point-of-care learning and that efficiency is the most important determinant in selecting an information source.&quot;</p>
+</blockquote>
+<p>We will be the most efficient, relevant, and practical information source!</p>
+</section>
+    </div>
+  </div>
+
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.min.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+    </body>
+</html>
